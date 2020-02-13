@@ -18,10 +18,11 @@ export const VideoPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div className="content">
-    <h2>VIDEO PAGE</h2>
-  </div>
-)
+    <div className="content">
+      <h1>VIDEO PAGE</h1>
+      <p>{title}</p>
+    </div>
+  )
 
 VideoPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
