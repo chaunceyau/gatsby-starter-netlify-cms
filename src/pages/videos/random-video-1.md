@@ -1,6 +1,7 @@
 ---
 templateKey: video-content
 name: 'Random Video! :)'
+title: 'random title'
 video_url: 'https://google.com'
 code:
   code: |-
