@@ -246,9 +246,11 @@ collections:
 
   - label: "Video Content"
     name: "videos"
-    folder: "src/pages/videos"
+    folder: "src/data/videos"
     create: true
     identifier_field: name
+    extension: json
+    format: json
     fields:
       - {
           label: "Template Key",

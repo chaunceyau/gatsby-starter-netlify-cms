@@ -1,0 +1,13 @@
+{
+  "title": "skills",
+  "skills": [
+    {
+      "id": "skill1",
+      "title": "something"
+    },
+    {
+      "id": "skill2",
+      "title": "something else"
+    }
+  ]
+}

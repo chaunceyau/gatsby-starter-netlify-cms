@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    `gatsby-transformer-json`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -28,6 +29,14 @@ module.exports = {
       options: {
         path: `${__dirname}/src/img`,
         name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fsdata`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
     'gatsby-plugin-sharp',
