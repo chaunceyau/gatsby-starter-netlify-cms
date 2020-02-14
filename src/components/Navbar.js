@@ -34,7 +34,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav className="flex items-center justify-between flex-wrap p-6">
+      <nav className="flex items-center justify-between flex-wrap py-6">
         <div className="flex items-center flex-shrink-0 mr-6">
           <span className="font-semibold text-xl tracking-tight">AUSTIN CHAUNCEY</span>
         </div>
@@ -48,17 +48,16 @@ const Navbar = class extends React.Component {
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:text-right ${this.state.navBarActiveClass}`}>
           <div className="text-sm lg:flex-grow">
-            <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
-              Docs
-            </a>
-            <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
-              Examples
-            </a>
-            <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+            <Link to='/blog' className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mr-4">
               Blog
-            </a>
+            </Link>
+            <Link className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mr-4">
+              Projects
+            </Link>
+            <Link className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mr-4">
+              Talks
+            </Link>
           </div>
-
         </div>
       </nav>
     )
